@@ -1,1 +1,76 @@
 /* pages/cart/cart.wxss */
+.content{
+  width:100%;
+  min-height: 100%;
+  display:flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+.entry,
+.entry-item{
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.entry-col{
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.entry,
+.entry-col text{
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.entry input{
+  font-size: 90%;
+  font-weight: 300;
+}
+
+.entry-item text{
+  margin-left: 15px;
+  color: #747372;
+  font-size: 78%;
+  font-weight: 100;
+}
+
+.right-text{
+  position: absolute;
+  right: 20rpx;
+}
+
+.hr{
+  height: 1px;
+  background-color: rgb(121, 131, 131);
+}
+
+.col-layout{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30rpx;
+}
+
+.weui-uploader-title{
+  margin-left: 15px;
+  color: #747372;
+  font-weight: bold;
+}
+
+.weui-uploader{
+  width: 150rpx;
+  height: 150rpx;
+  padding: 10rpx;
+  margin-left: 15px;
+}
+
+.btn{
+  margin-top: 30px;
+  background-color: #ecb911;
+}
+
