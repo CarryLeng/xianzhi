@@ -1,16 +1,18 @@
 <!--pages/userInfo/userInfo.wxml-->
 <view class="content">
-  <view>
-    <view>角色</view>
-    <view></view>
+  <view class="user-info-item">
+    <text class="user-info-item-title">角色</text>
+    <text class="user-info-item-content">{{userInfo.role}}</text>
   </view>
-  <view>
-    <view>注册电话</view>
-    <view></view>
+  <view class="hr"></view>
+  <view class="user-info-item">
+    <text class="user-info-item-title">注册电话</text>
+    <text class="user-info-item-content">{{userInfo.phone}}</text>
   </view>
-  <view>
-    <view>地址信息</view>
-    <view></view>
+  <view class="hr"></view>
+  <view class="user-info-item">
+    <text class="user-info-item-title">地址信息</text>
+    <text class="user-info-item-content">{{userInfo.address}}</text>
   </view>
   <view class="hr"></view>
 </view>

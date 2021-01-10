@@ -3,36 +3,36 @@
   <view class="content">
     <view class="entry">
       <text>品种</text>
-      <picker style="margin-left: 20px;">麻鸭</picker>
+      <input name="varieties" value="麻鸭" style="margin-left: 20px;" bindblur="varietiesBindblur"/>
       <text class="right-text" style="margin-left: 20px;">></text>
     </view>
     <view class="hr"></view>
     <view class="entry">
       <text>日龄</text>
-      <input placeholder="请输入天数" style="margin-left: 20px;"/>
+      <input name="age_day" placeholder="请输入天数" style="margin-left: 20px;" bindblur="ageAayBindblur"/>
       <text class="right-text" style="margin-left: 20px;">|天</text>
     </view>
     <view class="hr"></view>
     <view class="entry">
       <text>养殖总量</text>
-      <input placeholder="请输入总量" style="margin-left: 20px;"/>
+      <input name="breed_number" placeholder="请输入总量" style="margin-left: 20px;" bindblur="breedNumberBindblur"/>
       <text class="right-text" style="margin-left: 20px;">|羽</text>
     </view>
     <view class="hr"></view>
     <view class="entry">
       <text>死亡情况</text>
-      <input placeholder="请输入共死了多少/最近每天死多少" style="margin-left: 20px;"/>
+      <input name="death_number" placeholder="请输入共死了多少/最近每天死多少" style="margin-left: 20px;" bindblur="deathNumberBindblur"/>
     </view>
     <view class="hr"></view>
     <view class="entry-col">
       <text>上传 心、肝、脾，胰、胸腺、有变化的肠子内外解剖照片</text>
-      <image class="weui-uploader" bindtap="chooseImg" src="../../images/cart/uploader.jpeg"/>
+      <image bindtap="uploader_viscera" class="weui-uploader"  src="../../images/cart/uploader.jpeg"/>
     </view>
     <view class="hr"></view>
-    <view>
+    <view class="col-layout">
       <view class="entry">
         <text>粪便情况：</text>
-        <input placeholder="请输入粪便情况"/>
+        <input name="fecal_descri" placeholder="请输入粪便情况"/>
       </view>
       <view class="entry-item">
         <text>正常</text>
@@ -40,19 +40,21 @@
         <text>绿色</text>
         <text>白色</text>
         <text>黄白色</text>
+        <text>红色</text>
       </view>
       <view class="entry-item">
-        <text>红色</text>
         <text>黑褐色</text>
         <text>稀粪</text>
         <text>干粪</text>
       </view>
+      <text class="weui-uploader-title">最多两张</text>
+      <image bindtap="uploader_fecal" class="weui-uploader" src="../../images/cart/uploader.jpeg"/>
     </view>
     <view class="hr"></view>
     <view class="col-layout">
       <view class="entry">
         <text>外在表现：</text>
-        <input placeholder="请输入外在表现"/>
+        <input name="exter_descri" placeholder="请输入外在表现"/>
       </view>
       <view class="entry-item">
         <text>全身抽搐、表现角弓反张</text>
@@ -70,24 +72,26 @@
         <text>神萎靡、瘫软、流泪、部分头部肿大</text>
       </view>
       <text class="weui-uploader-title">最多四张</text>
-      <image class="weui-uploader" bindtap="chooseImg" src="../../images/cart/uploader.jpeg"/>
+      <image bindtap="uploader_exter" class="weui-uploader" src="../../images/cart/uploader.jpeg"/>
     </view>
     <view class="hr"></view>
     <view class="col-layout">
       <view class="entry">
         <text>防疫情况：</text>
-        <input placeholder="请输入打过的疫苗"/>
+        <input name="vaccine_descri" placeholder="请输入打过的疫苗"/>
       </view>
       <view class="entry-item">
         <text>短嘴大舌疫苗</text>
         <text>浆膜炎疫苗</text>
         <text>黄病毒疫苗</text>
-        <text>流感疫苗</text>
       </view>
       <view class="entry-item">
+        <text>流感疫苗</text>
         <text>鸭瘟疫苗</text>
         <text>鸭霍乱疫苗</text>
         <text>安卡拉</text>
+      </view>
+      <view class="entry-item">
         <text>腺病毒疫苗</text>
       </view>
     </view>
@@ -95,15 +99,15 @@
     <view class="col-layout">
       <view class="entry">
         <text>近期用药情况：</text>
-        <input placeholder="请输入近期用药情况"/>
+        <input name="medica_descri" placeholder="请输入近期用药情况"/>
       </view>
       <text class="weui-uploader-title">最多两张</text>
-      <image class="weui-uploader" bindtap="chooseImg" src="../../images/cart/uploader.jpeg"/>
+      <image bindtap="uploader_medica" class="weui-uploader" src="../../images/cart/uploader.jpeg"/>
     </view>
     <view class="hr"></view>
     <view class="entry">
       <text>手机号码</text>
-      <input placeholder="18669200765" style="margin-left: 50px"/>
+      <input name="phone_number" placeholder="18669200765" style="margin-left: 50px"/>
     </view>
     <view class="hr"></view>
 

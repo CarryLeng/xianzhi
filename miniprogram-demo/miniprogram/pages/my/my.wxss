@@ -6,28 +6,51 @@
   flex-direction: column;
   background-color: #fff;
 }
+
 .my-title{
   width: 100%;
-  height: 360rpx;
-  display: inline-flex;
-  justify-content: space-between;
+  height: 300rpx;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
 }
+
 .my-title-left{
   display: flex;
   flex-direction: column;
 }
-.my-title-left image{
-  width: 150rpx;
-  height: 150rpx;
+
+.userAvatarUrl{
+  overflow:hidden;  
+  display: block;  
+  width: 160rpx;  
+  height: 160rpx;  
+  margin-left: 20px;   
+  border-radius: 50%;  
+  border: 2px solid #fff;  
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  
 }
-.my-title-left text{
-  font-size: 50rpx;
-  font-weight: 400;
+
+.userNickName{
+  font-size: 20px;
+  color: #333333;
+  margin-left: 25px;
+  margin-top: 10px;
 }
+
 .my-title-right{
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
+  margin-left: 20px;
 }
+
+.my-title-right text{
+  font-size: 15px;
+  font-weight: 100;
+  color: #747372;
+}
+
 .dividing-line{
   width: 100%;
   height: 2rpx;
@@ -42,7 +65,7 @@
 .my-item-icon{
   width: 80rpx;
   height: 80rpx;
-  margin-top: 10px;
+  margin-top: 16px;
 }
 .my-item-text{
   margin-left: 10rpx;
@@ -53,21 +76,19 @@
 .my-item-arrow{
   width: 80rpx;
   height: 80rpx;
-  right: 30rpx;
+  margin-top: 16px;
   position: absolute;
-  margin-top: 20px;
+  right: 30rpx;
 }
 
 .my-item-number{
-  border: 1rpx solid #cccccc;
   width: 100px;
-  height: 30px;
   margin: 0 auto;
+  text-align: center;
   background: #ffffff;
-  border-radius: 15px;
-  margin-top: 10px;
-  padding-top: 13px;
-  padding-left: 13px;
+  border: 1rpx solid #cccccc;
+  border-radius: 10px;
+  margin-top: 20px;
   position: absolute;
   right: 50rpx;
 }

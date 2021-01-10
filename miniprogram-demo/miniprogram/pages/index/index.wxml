@@ -22,7 +22,7 @@
     </view>
     <view class="theme-calendar">
       <text>出苗日期</text>
-      <image src="./images/calendar.png"></image>
+      <image src="../../images/index/calendar.png"></image>
     </view>
     <view class="theme-search" hidden="true">
       

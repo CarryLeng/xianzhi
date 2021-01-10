@@ -1,1 +1,44 @@
 /* pages/userInfo/userInfo.wxss */
+.content{
+  width:100%;
+  min-height: 100%;
+  display:flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+.user-info-item{
+  height: 120rpx;
+  line-height: 120rpx;
+  overflow:hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.user-info-item-title{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.user-info-item-content{
+  width: 480rpx;
+  position: absolute;
+  right: 10rpx;
+  text-align: center;
+  font: 16px;
+  font-weight: 100;
+  color: #747372;
+  margin-left: 50rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.hr{
+  height: 1px;
+  background-color: rgb(121, 131, 131);
+}

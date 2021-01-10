@@ -20,19 +20,19 @@ Page({
     duration: 1000, // 滑动动画时长
     circular: true,//是否采用衔接滑动 
     themes: [
-      { theme_icon: 'images/theme@1.png', theme_name: '鸭苗', theme_type: 1 },
-      { theme_icon: 'images/theme@2.png', theme_name: '饲料', theme_type: 2 },
-      { theme_icon: 'images/theme@3.png', theme_name: '禽具', theme_type: 3 },
+      { theme_icon: '../../images/index/theme@1.png', theme_name: '鸭苗', theme_type: 1 },
+      { theme_icon: '../../images/index/theme@2.png', theme_name: '饲料', theme_type: 2 },
+      { theme_icon: '../../images/index/theme@3.png', theme_name: '禽具', theme_type: 3 },
     ],
     banners: [
-      { image: "images/001.png", product_id: 1},
-      { image: "images/002.png", product_id: 2}
+      { image: "../../images/index/001.png", product_id: 1},
+      { image: "../../images/index/002.png", product_id: 2}
     ],
     products: [
       { 
         product_id: 1,
         product_name: "一日龄出壳苗 大种白番鸭苗", 
-        product_img: "../../pages/index/images/003.png", 
+        product_img: "../../images/index//003.png", 
         product_price: "5", 
         product_unit: "/只",
         birth_time: "2020/07/12", 
@@ -43,7 +43,7 @@ Page({
       { 
         product_id: 2,
         product_name: "一日龄出壳苗 麻鸭苗", 
-        product_img: "../../pages/index/images/003.png", 
+        product_img: "../../images/index/003.png", 
         product_price: "10", 
         product_unit: "/只",
         birth_time: "2020/07/17", 
@@ -189,7 +189,7 @@ Page({
       var object = Object()
       object.product_id = data.productId
       object.product_name = data.productDetail + " " + data.productName
-      object.product_img = "../../pages/index/images/003.png"
+      object.product_img = "../../images/index/003.png"
       object.product_price = data.productPrice
       if (curType == "鸭苗") {
         object.product_unit = "/只"

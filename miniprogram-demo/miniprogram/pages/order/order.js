@@ -76,6 +76,9 @@ Page({
       object.pid = this.data.product.product_id
       object.uid = this.data.userInfo.uid
       object.numbers = this.data.numbers
+      object.product_name = this.data.product.product_name
+      object.product_price = this.data.product.product_price
+      object.supplier_name = this.data.product.supplier_name
       var orderInfo = JSON.stringify(object)
       wx.navigateTo({
         url: '../orderInfo/orderInfo?orderInfo=' + orderInfo,

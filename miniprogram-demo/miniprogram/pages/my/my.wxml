@@ -2,37 +2,40 @@
 <view class="container">
   <view class="my-title">
     <view class="my-title-left">
-      <image class="my-icon" src="./images/search.jpg"/>
-      <text>武夷道人</text>
+      <view  class="userAvatarUrl">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <view class="userNickName">
+        <open-data type="userNickName" ></open-data>
+      </view>
     </view>
     <view class="my-title-right">
       <text>养殖户</text>
-      <text>1000只麻鸭在养，出壳50天</text>
+      <text style="margin-top: 10px;">1000只麻鸭在养，出壳50天</text>
     </view>
   </view>
   <view class='dividing-line'></view>
-
   <view class="item">
     <view class="my-item">
-      <image class="my-item-icon" src="./images/search.jpg"/>
+      <image class="my-item-icon" src="../../images/my/search.jpg"/>
       <view class="my-item-text">个人资料</view>
-      <image class="my-item-arrow" src="./images/arrow.png" bindtap="userInfo"/>
+      <image class="my-item-arrow" src="../../images/my/arrow.png" bindtap="userInfo"/>
     </view>
     <view class='line'></view>
   </view>
 
   <view class="item">
     <view class="my-item">
-      <image class="my-item-icon" src="./images/search.jpg"/>
+      <image class="my-item-icon" src="../../images/my/search.jpg"/>
       <view class="my-item-text">订单信息</view>
-      <image class="my-item-arrow" src="./images/arrow.png" bindtap="orderInfo"/>
+      <image class="my-item-arrow" src="../../images/my/arrow.png" bindtap="orderInfo"/>
     </view>
     <view class='line'></view>
   </view>
 
   <view class="item">
     <view class="my-item">
-      <image class="my-item-icon" src="./images/search.jpg"/>
+      <image class="my-item-icon" src="../../images/my/search.jpg"/>
       <view class="my-item-text">客户服务</view>
       <view class="my-item-number">0793-XXXX</view>
     </view>

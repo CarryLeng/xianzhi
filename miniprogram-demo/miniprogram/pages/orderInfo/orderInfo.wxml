@@ -1,7 +1,35 @@
 <!--pages/orderInfo/orderInfo.wxml-->
-<view>
-  <view>{{orderInfo.uid}}</view>
-  <view>{{orderInfo.pid}}</view>
-  <view>{{orderInfo.numbers}}</view>
-  <view>{{ordetDetails}}</view>
+<view class="content">
+  <view class="title-bar">
+    <view class="title-bar-item" style="color:#F00;">全部</view>
+    <view class="title-bar-item">待付定金</view>
+    <view class="title-bar-item">待收货</view>
+    <view class="title-bar-item">待结款</view>
+    <view class="title-bar-item">已完成</view>
+    <view class="title-bar-item">已取消</view>
+  </view>
+  <view class="hr"></view>
+  <block wx:for="{{orderInfos}}" wx:key="key" >
+    <view class="order-info-item">
+      <view class="order-info-title">
+        <text style="margin-left: 20px;">{{item.factory}}</text>
+        <text style="position: absolute; right:15px;">{{item.state}}</text>
+      </view>
+      <view class="order-info-goods">
+        <image class="order-info-icon" src="../../images/index/003.png"/>
+        <view style="display: flex; flex-direction: row;margin-top: 10rpx;">
+          <text class="order-info-name">{{item.name}}</text>
+          <text style="position: absolute; right:15px; color:#F00;">￥{{item.price_total}}</text>
+        </view>
+        <view style="display: flex; flex-direction: row; margin-top: 100rpx;">
+          <text style="position: absolute; left:220rpx; color:#F00;">￥{{item.price_unit}}/只</text>
+          <text style="position: absolute; right:15px; color:#726f6f;">共{{item.numbers}}只</text>
+        </view>
+        <view style="display: flex; flex-direction: row; margin-top: 180rpx;">
+          <text bindtap="refundDetails" class="order-info-button" style="margin-right: 200rpx">退款明细</text>
+          <text bindtap="buyAgain" class="order-info-button">再次购买</text>
+        </view>
+      </view>
+    </view>
+  </block>
 </view>
